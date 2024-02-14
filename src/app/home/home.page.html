@@ -1,20 +1,69 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Blank
+    <ion-title color="Primary">
+      The Roof Medic - Daily Activity Tracking Program
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-card class="ion-text-center">
+    <img src="https://yourroofmedic.com/wp-content/uploads/2023/02/RoofMedic_Logo_400.png" alt="Logo"/>
+    <br>
+    <br>
+    <ion-card-header>
+      <ion-card-title class="ion-text-center">Geolocation Coordinates</ion-card-title>
+      <ion-card-subtitle class="ion-text-left">1. Select the stop number.<br>
+        2. Click blue button to get current coordinates.<br>
+        3. Click red button to update.</ion-card-subtitle>
+    </ion-card-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+    <ion-card-content>
+      <div class="fields-container">
+        <ion-item>
+        <ion-input label="Employee #:" [(ngModel)]="fieldEmployee" name="fieldEmployee" type="text"></ion-input>
+      </ion-item>
+      <ion-item>
+        <p [style.fontSize.px]="status === 'Enroute' ? 16 : 16"
+        [style.lineHeight.px]="status === 'Enroute' ? 18 : 18"
+        [style.color]="status === 'Enroute' ? '#2b9c4d' : '#FF0000'">
+       Status: {{ status }}
+     </p>
+                     <select [(ngModel)]="selectedStop">
+          <option value="1st Stop">1st Stop</option>
+          <option value="2nd Stop">2nd Stop</option>
+          <option value="3rd Stop">3rd Stop</option>
+          <option value="4th Stop">4th Stop</option>
+          <option value="5th Stop">5th Stop</option>
+          <option value="6th Stop">6th Stop</option>
+        </select>
+<!--          <ion-input label="Stop #:" [(ngModel)]="fieldStop" name="fieldStop" type="text"></ion-input>-->
+      </ion-item>
+      </div>
+      <br>
+      <ion-item>
+        <ion-input label="Date" [(ngModel)]="fieldDate" name="fieldDate" type="text"></ion-input>
+      </ion-item>
+      <br>
+      <ion-item>
+        <ion-input label="Time" [(ngModel)]="fieldTime" name="fieldTime" type="text"></ion-input>
+      </ion-item>
+      <br>
+      <ion-item>
+        <ion-input label="Latitude" [(ngModel)]="fieldLatitude" name="fieldLatitude" type="text"></ion-input>
+      </ion-item>
+      <br>
+      <ion-item>
+        <ion-input label="Longitude" [(ngModel)]="fieldLongitude" name="fieldLongitude" type="text"></ion-input>
+      </ion-item>
+      <div *ngIf="showError" class="error-message">
+        Status or Coordinates are blank. Use Get Current Location first and try again.
+      </div>
+      <br>
+        <ion-button color="primary" (click)="getLocation()">Get Current Location</ion-button>
+        <br>
+        <ion-button color="danger" (click)="insertRecord()">Add Coordinates</ion-button>
+      
+    </ion-card-content>
+  </ion-card>
 </ion-content>

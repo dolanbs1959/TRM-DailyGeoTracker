@@ -13,11 +13,16 @@
   line-height: 26px;
 }
 
+.fields-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
 #container p {
   font-size: 16px;
   line-height: 22px;
 
-  color: #8c8c8c;
+  color: #2b9c4d;
 
   margin: 0;
 }
@@ -25,3 +30,23 @@
 #container a {
   text-decoration: none;
 }
+
+ion-header {
+  --ion-background-color: #d40000; /* Header background color */
+  --ion-color-base: #fff; /* Text color */
+}
+
+ion-title {
+  font-size: 1.25em; /* Adjust the font size */
+  font-weight: normal;
+  text-shadow: none;
+}
+
+ion-content {
+  --ion-font-size: 16px; /* Set a default font size */
+}
+
+ion-buttons {
+  font-size: 1.2em;
+}
+
