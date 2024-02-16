@@ -20,7 +20,7 @@ log.txt
 # Ionic
 /.ionic
 #/www
-/scr
+/src
 /platforms
 /plugins
 
