@@ -23,7 +23,7 @@ log.txt
 /src
 /platforms
 /plugins
-index.html
+/index.html
 # Compiled output
 /dist
 /tmp
