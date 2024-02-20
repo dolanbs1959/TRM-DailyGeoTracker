@@ -23,6 +23,22 @@
   <app-root></app-root>
 <script src="./runtime.0a44db0156406956.js" type="module"></script>
 <script src="./polyfills.cf419aa12150fa3f.js" type="module"></script>
-<script src="./main.9833a5b3a5ad2a51.js" type="module"></script></body>
+<script src="./main.9833a5b3a5ad2a51.js" type="module"></script>
+
+const fs = require('fs');
+const path = './dist/TRM-DailyGeoTracker/index.html';
+
+fs.readFile(path, 'utf8', function (err, data) {
+    if (err) {
+        return console.log(err);
+    }
+    var result = data.replace(/\/TRM-DailyGeoTracker\//g, '/docs/');
+
+    fs.writeFile(path, result, 'utf8', function (err) {
+        if (err) return console.log(err);
+    });
+});
+</body>
+
 
 </html>
