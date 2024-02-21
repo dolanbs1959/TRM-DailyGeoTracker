@@ -3,12 +3,12 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "app": {
+    "TRMGeoTracker": {
       "projectType": "application",
       "schematics": {},
       "root": "",
       "sourceRoot": "src",
-      "prefix": "app",
+      "prefix": "Geo Tracker",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
