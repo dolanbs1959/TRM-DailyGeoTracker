@@ -1,0 +1,22 @@
+{
+    "index": "/index.html",
+    "assetGroups": [
+      {
+        "name": "Geo Tracker",
+        "installMode": "prefetch",
+        "resources": {
+          "files": [
+            "/favicon.ico",
+            "/index.html",
+            "/manifest.webmanifest"
+          ],
+          "versionedFiles": [
+            "/*.js",
+            "/*.css"
+          ]
+        }
+      }
+    ],
+    "dataGroups": []
+  }
+  
