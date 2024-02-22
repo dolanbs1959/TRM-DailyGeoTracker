@@ -1,6 +1,6 @@
 {
-  "name": "app",
-  "short_name": "app",
+  "name": "TRM GeoTracker",
+  "short_name": "GeoTracker",
   "theme_color": "#1976d2",
   "background_color": "#fafafa",
   "display": "standalone",
