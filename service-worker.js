@@ -1,7 +1,7 @@
 // service-worker.js
 
 // Cache name
-const CACHE_NAME = 'TRM GeoTacker';
+const CACHE_NAME = 'TRM GeoTracker';
 
 // List of files to cache
 const cacheUrls = [
