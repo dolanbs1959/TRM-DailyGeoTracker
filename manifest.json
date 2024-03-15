@@ -1,7 +1,7 @@
 {
-    "name": "Geo Tracker",
-    "short_name": "TRM GEO",
-    "description": "Capture your daily job location, start and stop times, and record them in the database",
+    "name": "HOMMA",
+    "short_name": "HOMMA",
+    "description": "Mobiles assistant for House Leaders to perform tasks.",
     "start_url": "/",
     "display": "standalone",
     "background_color": "#ffffff",

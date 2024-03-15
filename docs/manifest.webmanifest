@@ -1,6 +1,6 @@
 {
-  "name": "TRM GeoTracker",
-  "short_name": "GeoTracker",
+  "name": "HOMMA",
+  "short_name": "HOMMA",
   "theme_color": "#1976d2",
   "background_color": "#fafafa",
   "display": "standalone",
@@ -8,50 +8,50 @@
   "start_url": "./",
   "icons": [
     {
-      "src": "assets/icons/compass-72x72.png",
-      "sizes": "72x72",
+      "src": "assets/icons/HOM-72.png",
+      "sizes": "72x49",
       "type": "image/png",
       "purpose": "maskable any"
     },
     {
-      "src": "assets/icons/compass-96x96.png",
-      "sizes": "96x96",
+      "src": "assets/icons/HOM-96.png",
+      "sizes": "96x66",
       "type": "image/png",
       "purpose": "maskable any"
     },
     {
-      "src": "assets/icons/compass-128x128.png",
-      "sizes": "128x128",
+      "src": "assets/icons/HOM-128.png",
+      "sizes": "128x88",
       "type": "image/png",
       "purpose": "maskable any"
     },
     {
-      "src": "assets/icons/compass-144x144.png",
-      "sizes": "144x144",
+      "src": "assets/icons/HOM-144.png",
+      "sizes": "144x100",
       "type": "image/png",
       "purpose": "maskable any"
     },
     {
-      "src": "assets/icons/compass-152x152.png",
-      "sizes": "152x152",
+      "src": "assets/icons/HOM-152.png",
+      "sizes": "152x106",
       "type": "image/png",
       "purpose": "maskable any"
     },
     {
-      "src": "assets/icons/compass-192x192.png",
-      "sizes": "192x192",
+      "src": "assets/icons/HOM-192.png",
+      "sizes": "192x134",
       "type": "image/png",
       "purpose": "maskable any"
     },
     {
-      "src": "assets/icons/compass-384x384.png",
-      "sizes": "384x384",
+      "src": "assets/icons/HOM-384.png",
+      "sizes": "384x269",
       "type": "image/png",
       "purpose": "maskable any"
     },
     {
-      "src": "assets/icons/compass-512x512.png",
-      "sizes": "512x512",
+      "src": "assets/icons/HOM-512.png",
+      "sizes": "512x359",
       "type": "image/png",
       "purpose": "maskable any"
     }

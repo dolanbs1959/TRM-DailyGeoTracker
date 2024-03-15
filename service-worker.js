@@ -1,7 +1,7 @@
 // service-worker.js
 
 // Cache name
-const CACHE_NAME = 'TRM GeoTracker';
+const CACHE_NAME = 'HOMMA';
 
 // List of files to cache
 const cacheUrls = [
@@ -19,7 +19,7 @@ const cacheUrls = [
   '/assets/data/data.json',
   'https://api.quickbase.com/v1/records',
   'https://api.quickbase.com/v1/records/query',
-  'https://yourroofmedic.com/wp-content/uploads/2023/02/RoofMedic_Logo_400.png',
+  'assets/logo/HOM.png',
 
   // Add more files and resources to cache
 ];
